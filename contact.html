@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <script src="https://kit.fontawesome.com/6683669b0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="resources/queries.css">
+    
+</head>
+<body>
+    <!-- hero section -->
+    <section id="sub-header">
+      <nav>
+          <a href="index.html"><img src="image/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+               <i class="fas fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="course.html">COURSE</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>               
+               </ul>
+          </div>  
+          <i class="fas fa-bars" onclick="showMenu()"></i>   
+      </nav>
+        <h1>Contact Us</h1>
+    </section> 
+
+    <!-- contact us-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.7613580898806!2d89.68658371479879!3d24.459063584244817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdc1c4855ac1b3%3A0x5b0690306a7aa3b7!2sVashani%20Road%2C%20Sirajganj!5e0!3m2!1sen!2sbd!4v1626152733549!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-us-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>Vashani Road, ABC Building</h5>
+                <p>Sirajganj, Rajshahi</p>         
+            </span> 
+         </div> 
+         <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+8801533-055856</h5>
+                <p>Saturday to Thursday, 10AM to 5PM</p>         
+            </span> 
+         </div> 
+         <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+                <h5>nadifchowdhury620@gmail.com</h5>
+                <p>Email us your query</p>         
+            </span> 
+         </div> 
+
+        </div>
+        <div class="contact-us-col">
+             <form action="php/form-handler.php" method="post">
+                   <input type="text" name="name" placeholder="Enter Your Name" required>
+                   <input type="email" name="email" placeholder="Enter Your Email Adress" required>
+                   <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                   <textarea rows="8" name="message" placeholder="message" required></textarea>
+                   <button type="submit" class="hero-btn about-btn">Send Message</button>
+             </form>
+        </div>
+
+      </div>
+
+    </section>
+   
+
+    
+   <!-- Footer -->
+
+   <footer class="footer">
+           <h4>About Us</h4>   
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+     <div class="footerICon">
+          <h4>Follow Us</h4>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+     </div>
+     <p>Made With<i class="fa fa-heart-o">Nadif Mahmud</i></p>
+     <p> &copy;Copyright 2019 nadifmahmud.info All rights reserved.
+     </p>       
+
+   </footer>
+
+    <script type="application/javascript" src="resources/queries.js"></script>
+</body>
+</html>
